@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+*{
+  outline: none !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.api__data{
+  position: absolute;
+top: 40%;
+left: 35%;
+}
+.wrapper{
+  width: 450px;
+
+  padding: 30px;
+  /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
+}
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #FF3008;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input-data .underline{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #FF3008;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+  transform: scaleX(1);
+}
+@media(max-width:600px) {
+  .product-card {
+    width: 160px !important;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 30px auto;
+    background: #fafafa;
+  }
+}
+@media(max-width:800px){
+  .wrapper{
+    width: 300px;
+  
+    padding: 20px;
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
+  }
+  .count__basket{
+ position: absolute;
+ top: 11px;
+ left: -384px;
+
+  }
+  
+}
+.promoted__css{
+  background: #2d3436;
+  padding: 5px;
+  color: white;
+  position:absolute;
+  top: 6px;
+  left: 6px;
+}
+.heart_icon_cards{
+  font-size: 22px;
+  position:absolute;
+  top: 6px;
+  right: 6px;
+  color:#e74c3c;
+  background: white;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.card__buttonss{
+  font-size: 15px !important;
+  font-weight: bold !important;
+
+  
+}
+.option__cs{
+  border: none;
+  padding: 4px 8px;
+  border: 1px solid rgb(196, 196, 196);
+  outline: none;
+}
+.option__cs1{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height: 28px;
+  border: none;
+  padding: 3px 6px;
+  border: 1px solid rgb(196, 196, 196);
+  outline: none;
+}
+.for_style{
+  width: 99%;
+  position: relative;
+  left: 2%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.product-card {
+  width: 210px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+}
+
+.badge1 {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  padding: 39px;
+  background: #f0f0f0;
+}
+
+.product-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.productsss__imgs{
+  height: 200px;
+}
+.productsss__imgss{
+  max-height: 200px;
+
+  
+}
+.rating__css{
+  position: absolute;
+  right:8px;
+top: 140px;
+  color: #fff;
+  background: #2ecc71;
+  padding:5px;
+}
+.offers--cs{
+  color: #fff;
+  background: #2ecc71;
+  padding:2px;
+  
+}
+.count__basket{
+  position: absolute;
+  right: -108%;
+
+}
+.total___carts{
+  background: #2ecc71;
+  color: #fff;
+  padding: 2px 5px;
+}
+.delete_icon{
+  font-size: 23px;
+  color: crimson;
+  cursor: pointer;
+}
+.crosoule-btn{
+  border: none;
+  background: #FF3008;
+  color: #fff;
+  font-size: 14px;
+}
